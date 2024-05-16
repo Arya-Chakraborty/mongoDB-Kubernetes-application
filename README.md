@@ -7,8 +7,8 @@
 3. mongo/mongo-express image was used for pod/service deployment
 
 ### How it Works?
-1. An external request is made to the mongoDB-express external LoadBalancer service
-2. The request then moves on to the mongoDB-express pods
+1. An external request is made to the mongo-express external LoadBalancer service
+2. The request then moves on to the mongo-express pods
 3. The internal ClusterIP service conveys the request to the mongoDB pods where the final changes as per the external request occur. The order is followed in reverse and the output is displayed via the external IP.
 
 
